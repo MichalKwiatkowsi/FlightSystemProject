@@ -1,4 +1,4 @@
-package org.acme.dto;
+package org.acme.main;
 
 public class Flight {
 
@@ -8,10 +8,6 @@ public class Flight {
     String date;
     int availableSeats;
     String passengerName;
-
-    public Flight() {
-
-    }
 
     public Flight(int number, String origin, String destination, String date, int availableSeats) {
         this.number = number;

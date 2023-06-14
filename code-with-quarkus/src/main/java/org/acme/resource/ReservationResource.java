@@ -1,6 +1,6 @@
-package org.acme.web;
+package org.acme.resource;
 
-import org.acme.dto.Reservation;
+import org.acme.main.Reservation;
 import org.acme.service.FlightService;
 
 import javax.inject.Inject;
@@ -18,7 +18,7 @@ public class ReservationResource {
     private Set<Reservation> reservations = Collections.newSetFromMap(Collections.synchronizedMap(new LinkedHashMap<>()));
 
     @Inject
-    private FlightService service;
+    public FlightService service;
 
     @POST
     public Response createReservation(Reservation reservation) {

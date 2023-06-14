@@ -1,4 +1,4 @@
-package org.acme.dto;
+package org.acme.main;
 
 public class Reservation {
     private int flightNumber;

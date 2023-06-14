@@ -1,7 +1,7 @@
-package org.acme.web;
+package org.acme.resource;
 
-import org.acme.dto.Flight;
-import org.acme.dto.Reservation;
+import org.acme.main.Flight;
+import org.acme.main.Reservation;
 import org.acme.service.FlightService;
 
 import javax.inject.Inject;
@@ -18,7 +18,7 @@ import java.util.Set;
 @Path("/flights")
 public class FlightResource {
     @Inject
-    private FlightService service;
+    public FlightService service;
     private List<Reservation> reservations = new ArrayList<>();
 
     @GET

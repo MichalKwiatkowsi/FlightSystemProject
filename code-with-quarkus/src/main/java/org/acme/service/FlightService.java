@@ -1,7 +1,7 @@
 package org.acme.service;
 
-import org.acme.dto.Flight;
-import org.acme.dto.Reservation;
+import org.acme.main.Flight;
+import org.acme.main.Reservation;
 
 import javax.inject.Singleton;
 import java.util.Collections;
@@ -16,7 +16,7 @@ public class FlightService {
     public FlightService() {
         flights.add(new Flight(3, "Warszawa", "Berlin", "25.06.2023", 20));
         flights.add(new Flight(2, "Berlin", "Paryż", "20.06.2023", 19));
-        flights.add(new Flight(1, "Praga", "Łódź", "30.07.2023", 50));
+        flights.add(new Flight(1, "Praga", "Łódź", "30.07.2023", 0));
     }
 
     public boolean commitReservation(Reservation reservation) {
